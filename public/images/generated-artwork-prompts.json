@@ -1,0 +1,70 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "purpose": "Original illustrations for a fictional frontend marketplace. No image generation API is used by the application.",
+  "assets": [
+    {
+      "path": "public/images/artworks/mountain.jpg",
+      "prompt": "Use case: stylized-concept. Asset type: original fine art painting for the Artora art marketplace, landscape hero. Create a stunning contemporary impasto oil painting of an alpine lake at golden hour, tall jagged blue violet mountain peaks, a warm coral orange apricot sky with painterly expressive clouds, sunlit pine forest and tiny wildflowers at lake shore, and rich cerulean turquoise reflections in the still water. Elegant collectible painting, bold loose visible palette knife brush marks and thick texture, sophisticated harmonious palette. Wide panoramic landscape composition 3:2. Edge-to-edge painting only; no frame, no border, no words, no signature, no watermark. This will fill a premium art marketplace website hero and be sold only as a fictional demonstration artwork."
+    },
+    {
+      "path": "public/images/artworks/portrait.jpg",
+      "prompt": "Use case: stylized-concept. Asset: edge-to-edge original oil painting for a fictional fine art marketplace. A captivating contemporary painted portrait of a young woman with flowing dark wavy hair, thoughtful hazel eyes, terracotta linen dress, surrounded by lush coral pink and golden wildflowers, sage leaves. Thick expressive oil brush strokes, visible natural canvas texture, warm ivory pale peach background, elegant human face mixed with abstract loose painterly colorful flowers. Sophisticated boutique gallery quality. Vertical composition. No words, watermark, signatures, frame, border, or UI."
+    },
+    {
+      "path": "public/images/artworks/coast.jpg",
+      "prompt": "Use case: stylized-concept. Asset: original fine art painting, wide landscape 3:2, edge to edge. Beautiful luminous Mediterranean coastal village at sunset, terracotta and peach village buildings nestled among dark cypress trees to the right, turquoise water with golden reflections, small rocky shoreline with wildflowers in foreground, distant blue mountains, brilliant peach amber coral sky with painterly clouds. Bold expressive impasto oil palette knife brushstrokes, refined collectible contemporary art, saturated harmonious colors. No signature, words, frame, border, or UI."
+    },
+    {
+      "path": "public/images/artworks/flowers.jpg",
+      "prompt": "Use case: stylized-concept. Asset: original fine art painting for premium fictional art marketplace. A luxuriant bouquet of cream daisies, coral peonies, apricot roses and little pale blue wildflowers in a small sage ceramic vase on an ivory table. Soft olive green background. Very expressive thick impasto oil paint, bold visible brush marks, textured canvas, contemporary impressionist still life, warm cream ochre coral palette with sage leaves. Square composition edge-to-edge artwork only. No text, signature, watermark, frame or border."
+    },
+    {
+      "path": "public/images/artworks/dog.jpg",
+      "prompt": "Use case: stylized-concept. Asset: original fine art painting for fictional commission art marketplace. Beautiful friendly golden retriever sitting on a beach at sunset, glowing golden fur, joyful expression, a turquoise sea and warm coral apricot sunset sky. Rich visible oil painting impasto texture, elegant expressive impressionist brush strokes, colorful and luminous, professional gallery illustration. Square composition, dog fills 65 percent of composition, painting edge to edge, no frame, no UI, no words, no watermark, no signature."
+    },
+    {
+      "path": "public/images/artworks/river.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A gentle river winding through a meadow of wildflowers below forested blue mountains, soft sunshine, luminous watercolor on textured paper, landscape composition. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/summer.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. Sunlight falling through a leafy tree onto an empty chair in a wild summer garden, gentle contemporary impressionist oil painting with visible brush marks, warm greens and ochres. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/garden.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A tangled wild cottage garden of delphiniums and hollyhocks along a stone path, beautifully loose watercolor, white paper showing through, sage green and lavender and pale coral. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/coast-study.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. An expansive azure sea meeting a rugged ochre coastline, distant pale blue mist, luxurious gestural acrylic painting with textured paint, wide horizontal landscape. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/flowers-study.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A few pale blush peonies and small white flowers in a terracotta vase on a linen cloth, delicate warm oil still life, expressive sophisticated brush marks. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/still-life.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A blue ceramic jug, three ripe pears and a small linen cloth on a pale cream table, translucent warm watercolor painting, muted green and ochre. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/landscape-study.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. Rolling open countryside and yellow ochre fields with tiny olive trees beneath an immense pale blue cloud filled sky, expressive textured mixed media painting, warm neutral elegant art. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/abstract-study.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A beautiful abstract composition of irregular overlapping terracotta coral ochre cream sage and dark charcoal organic shapes, contemporary expressive layered acrylic texture, refined playful earthy colors, no figurative elements. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/portrait-study.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A beautiful sensitive graphite pencil portrait study of a young woman in three-quarter view, quietly thoughtful expression, loose hair, finely observed eyes and face, expressive hatching and delicate sketch lines on warm ivory paper, unfinished drawing edges fading naturally into paper, refined contemporary atelier work, grayscale. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/mountain-rhythm.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A striking large contemporary abstract mixed-media painting of layered angular shapes and expressive gestural lines inspired by mountains, terracotta, muted sage, warm ochre, cream, deep slate blue. Visible tactile paper collage and dry brush textures, sophisticated rhythmic composition, almost abstract topography, no literal landscape. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    },
+    {
+      "path": "public/images/artworks/a-place-to-return.jpg",
+      "prompt": "Use case: stylized-concept. Create one original fine art painting for the Artora fictional demo marketplace. A beautiful expansive oil painting of a misty peaceful turquoise lake and distant soft blue mountain range in early morning, tall yellow golden aspen trees reflected in the water at right, wild grass in foreground, creamy blush sky, gentle luminous palette, luxurious visible soft brush strokes, sophisticated contemporary impressionism. Painting edge-to-edge, absolutely no frames, no UI, no watermark, no text, no signature. Collectible gallery quality. Square or landscape composition."
+    }
+  ]
+}

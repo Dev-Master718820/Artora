@@ -1,0 +1,79 @@
+[
+  {
+    "path": "/images/artists/emma.jpg",
+    "source": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/olivia.jpg",
+    "source": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/daniel.jpg",
+    "source": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/sophie.jpg",
+    "source": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/james.jpg",
+    "source": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/amelia.jpg",
+    "source": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/ethan.jpg",
+    "source": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/artists/charlotte.jpg",
+    "source": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/banners/studio.jpg",
+    "source": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/banners/academy.jpg",
+    "source": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  },
+  {
+    "path": "/images/banners/brushes.jpg",
+    "source": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0",
+    "license": "Unsplash License",
+    "rights": "https://unsplash.com/license",
+    "usage": "Illustrative stock photography; fictional identity, no endorsement implied"
+  }
+]

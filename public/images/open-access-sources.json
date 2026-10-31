@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/images/masters/bedroom.jpg",
+    "title": "The Bedroom",
+    "artist": "Vincent van Gogh",
+    "source": "https://www.artic.edu/artworks/28560",
+    "license": "CC0",
+    "url": "https://www.artic.edu/iiif/2/6644829f-f292-c5c4-a73c-0356a6fdbf0d/full/1000,/0/default.jpg"
+  },
+  {
+    "path": "/images/masters/water-lilies.jpg",
+    "title": "Water Lilies",
+    "artist": "Claude Monet",
+    "source": "https://www.artic.edu/artworks/16568",
+    "license": "CC0",
+    "url": "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/1000,/0/default.jpg"
+  }
+]
