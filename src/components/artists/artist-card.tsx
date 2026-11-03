@@ -9,7 +9,12 @@ export function ArtistCard({ artist }: { artist: Artist }) {
     <article className="artist-card">
       <Link href={"/artists/" + artist.slug} className="artist-card-cover">
         <ArtImage
-          src={work[0]?.image || "/images/artworks/flowers.jpg"}
+          src={
+            artist.coverImage ||
+            artist.portfolio?.[0]?.image ||
+            work[0]?.image ||
+            "/images/artworks/flowers.jpg"
+          }
           alt={`Explore ${artist.name}'s portfolio`}
         />
         <span className="round-link">
@@ -26,7 +31,11 @@ export function ArtistCard({ artist }: { artist: Artist }) {
           </Link>
           <span className="availability">
             <i />
-            {artist.available ? "Open for commissions" : "In the studio"}
+            {artist.suppliedPortfolio
+              ? "Original paintings"
+              : artist.available
+                ? "Open for commissions"
+                : "In the studio"}
           </span>
         </div>
         <p>{artist.specialties.slice(0, 2).join(" & ")} artist</p>

@@ -248,7 +248,7 @@ export function Modal({
   );
 }
 export function DemoNotice({
-  children = "An independent little world of art. All artists, prices, ratings, and transactions in the marketplace are demo content.",
+  children = "Sample marketplace listings, prices, ratings, and transactions are demo content. Artist-supplied portfolios are credited separately.",
 }: {
   children?: ReactNode;
 }) {

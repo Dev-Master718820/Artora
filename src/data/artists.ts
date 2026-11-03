@@ -1,5 +1,7 @@
 import type { Artist } from "@/types";
+import { alpanaBarthakur } from "./alpana-barthakur";
 export const artists: Artist[] = [
+  alpanaBarthakur,
   {
     slug: "emma-carter",
     styles: ["Impressionist", "Realistic"],

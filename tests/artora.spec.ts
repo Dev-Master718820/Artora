@@ -21,6 +21,7 @@ const routes = [
   "/checkout",
   "/favorites",
   "/profile",
+  "/profile/activity",
   "/about",
   ...artworks.map((a) => "/artworks/" + a.slug),
   ...artists.map((a) => "/artists/" + a.slug),
@@ -179,7 +180,7 @@ test("print cart quantities update totals, removals work, and checkout creates a
   await expect(
     page.getByRole("heading", { name: "Your demo order is complete." }),
   ).toBeVisible();
-  await page.goto("/profile");
+  await page.goto("/profile/activity");
   await expect(
     page.getByRole("heading", { name: /Demo order ART-/ }),
   ).toBeVisible();
@@ -235,7 +236,7 @@ test("commission validates, preserves draft, matches artists, reviews, and confi
   await expect(
     page.getByRole("heading", { name: "A story worth painting." }),
   ).toBeVisible();
-  await page.goto("/profile");
+  await page.goto("/profile/activity");
   await expect(page.getByText(/Saved demo request ART-/)).toBeVisible();
 });
 test("community post upload, immediate feed, likes, save, comments and session image behavior", async ({
@@ -380,7 +381,7 @@ test("tutor booking validates and persists session selection in demo activity", 
   await expect(
     page.getByRole("heading", { name: "A little time for creativity." }),
   ).toBeVisible();
-  await page.goto("/profile");
+  await page.goto("/profile/activity");
   await expect(
     page.getByText("With Sophie Morgan · 90 min · $100 demo price"),
   ).toBeVisible();

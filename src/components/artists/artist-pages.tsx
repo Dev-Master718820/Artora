@@ -8,6 +8,7 @@ import { courses } from "@/data/courses";
 import { searchMatches } from "@/lib/utils";
 import type { Artist } from "@/types";
 import { ArtistCard } from "./artist-card";
+import { PortfolioArtistProfile } from "./portfolio-profile";
 import { ArtworkGrid } from "@/components/artwork/artwork-card";
 import { CourseCard } from "@/components/academy/course-card";
 import {
@@ -88,6 +89,8 @@ export function ArtistDirectory() {
 export function ArtistProfile({ artist }: { artist: Artist }) {
   const [tab, setTab] = useState("Portfolio");
   const work = artworks.filter((a) => a.artist === artist.slug);
+  if (artist.suppliedPortfolio)
+    return <PortfolioArtistProfile artist={artist} />;
   return (
     <>
       <div className="profile-cover">

@@ -255,7 +255,7 @@ export function CheckoutPage() {
             was taken, no order was sent, and no artwork will be shipped.
           </p>
           <p className="field-help">Demo reference {order}</p>
-          <ButtonLink href="/profile">
+          <ButtonLink href="/profile/activity">
             View demo activity
             <ArrowRight size={14} />
           </ButtonLink>

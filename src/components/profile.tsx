@@ -31,6 +31,10 @@ export function ProfilePage() {
               activity.
             </p>
           </div>
+          <ButtonLink href="/profile" secondary>
+            Back to your profile
+            <ArrowRight size={14} />
+          </ButtonLink>
         </div>
         <div className="three-grid">
           {[

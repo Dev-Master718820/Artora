@@ -563,7 +563,7 @@ export function TutorProfile({ tutor }: { tutor: Artist }) {
                 <br />
                 No invitation was sent. No payment was taken.
               </p>
-              <ButtonLink href="/profile" className="full">
+              <ButtonLink href="/profile/activity" className="full">
                 View demo activity
                 <ArrowRight size={14} />
               </ButtonLink>

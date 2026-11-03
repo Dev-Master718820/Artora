@@ -16,10 +16,11 @@ export function AboutPage() {
           what you are making, or find a new way of seeing.
         </p>
         <p>
-          This is a frontend prototype. Contemporary artist names, biographies,
-          ratings, reviews, prices, classes, and marketplace listings are
-          fictional. No authentication, payments, video services, AI service, or
-          production storage is connected.
+          This is a frontend prototype. Except for artist-supplied profiles,
+          sample contemporary artist names, biographies, ratings, reviews,
+          prices, classes, and marketplace listings are fictional. No
+          authentication, payments, video services, AI service, or production
+          storage is connected.
         </p>
         <h2>What stays in your browser.</h2>
         <p>
@@ -30,6 +31,13 @@ export function AboutPage() {
           uploaded posts retain their text and display a designed placeholder.
         </p>
         <h2 id="credits">The art, and where it comes from.</h2>
+        <p>
+          Alpana Barthakur’s portrait and 14 painting photographs were supplied
+          for her artist profile in Hillsborough, New Jersey. They are presented
+          separately from the fictional marketplace listings. Descriptive labels
+          help visitors browse the collection; no prices, reviews, or experience
+          claims have been added.
+        </p>
         <p>
           Contemporary marketplace illustrations were generated for this
           prototype using OpenAI's built-in image generation tool. They are

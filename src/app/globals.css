@@ -5667,3 +5667,486 @@ hr {
     font-size: 13px;
   }
 }
+
+/* Artist-supplied portfolios show complete photographs and no sample sales data. */
+.portfolio-cover {
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+  background: #e3e9da;
+}
+.portfolio-cover > img {
+  object-position: center 48%;
+}
+.portfolio-cover:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #1c352bdb, #1d352b77 43%, #172e2222);
+}
+.portfolio-cover-content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.portfolio-cover-content .eyebrow {
+  color: #e3d6b7;
+  font-size: 9px;
+}
+.portfolio-cover-content > p {
+  font: 37px/1.12 var(--serif);
+  color: #fff9ed;
+  margin-top: 18px;
+  letter-spacing: -1px;
+}
+.portfolio-cover-content em {
+  color: #e2d8a9;
+}
+.portfolio-profile {
+  margin-top: -44px;
+  position: relative;
+}
+.portfolio-profile .profile-heading {
+  align-items: flex-end;
+  margin-bottom: 29px;
+}
+.portfolio-profile .profile-identity > img {
+  object-position: center 27%;
+  background: var(--cream);
+}
+.portfolio-profile .profile-name {
+  padding-bottom: 6px;
+}
+.portfolio-profile .profile-name > .eyebrow {
+  margin-top: 53px;
+}
+.portfolio-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.portfolio-profile .profile-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.portfolio-profile .profile-actions .button {
+  font-size: 10px;
+  padding: 11px 14px;
+}
+.portfolio-profile-layout {
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: 38px;
+  margin-top: 38px;
+}
+.portfolio-profile .profile-bio > .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+.portfolio-profile .profile-bio h3 {
+  font-size: 25px;
+  line-height: 1.15;
+}
+.portfolio-profile .profile-stat-row {
+  gap: 26px;
+  padding: 22px 0;
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.portfolio-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 26px;
+  color: #8b7759;
+}
+.portfolio-note > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.portfolio-note p {
+  font-size: 10px !important;
+}
+.portfolio-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.portfolio-section-heading .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.7px;
+  margin-bottom: 12px;
+}
+.portfolio-section-heading h2 {
+  font-size: 31px;
+}
+.portfolio-section-heading > span {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-bottom: 3px;
+}
+.portfolio-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 27px;
+}
+.portfolio-filters .chip {
+  font-size: 9px;
+  padding: 8px 11px;
+}
+.portfolio-filters .search-field {
+  max-width: 340px;
+}
+.portfolio-painting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 29px 20px;
+}
+.portfolio-painting {
+  min-width: 0;
+}
+.portfolio-painting-image {
+  width: 100%;
+  aspect-ratio: 0.88;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background: #efebe3 !important;
+  border: 1px solid #e5dfd3 !important;
+  border-radius: 4px;
+  padding: 13px !important;
+}
+.portfolio-painting-image img {
+  object-fit: contain;
+  transition: transform 0.35s;
+}
+.portfolio-painting-image:hover img {
+  transform: scale(1.025);
+}
+.portfolio-view-icon {
+  position: absolute;
+  right: 11px;
+  bottom: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dbd0bc;
+  background: #faf8f4ef;
+  color: #615745;
+  border-radius: 50%;
+}
+.portfolio-painting-caption {
+  padding: 15px 0 0;
+}
+.portfolio-painting-caption > .eyebrow {
+  font-size: 7px;
+  letter-spacing: 1.1px;
+  margin-bottom: 8px;
+}
+.portfolio-painting-caption > button {
+  padding: 0;
+  text-align: left;
+}
+.portfolio-painting-caption h3 {
+  font-size: 21px;
+  letter-spacing: -0.4px;
+}
+.portfolio-painting-caption button:hover {
+  color: var(--accent);
+}
+.portfolio-credit {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  margin-top: 34px;
+}
+.portfolio-about > .eyebrow {
+  font-size: 8px;
+}
+.portfolio-about > h2 {
+  font-size: 35px;
+  margin: 20px 0;
+}
+.portfolio-subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.portfolio-subject-list > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--border) !important;
+}
+.portfolio-subject-list > button > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.portfolio-lightbox {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 245px;
+  gap: 26px;
+}
+.portfolio-lightbox > .lightbox-image {
+  height: 65dvh;
+  max-height: 65dvh;
+  background: #eee9df;
+  object-fit: contain;
+  padding: 8px;
+  border-radius: 3px;
+}
+.portfolio-lightbox-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+.portfolio-lightbox-details .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.portfolio-lightbox-details h3 {
+  font-size: 27px;
+}
+.portfolio-lightbox-details p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 16px 0;
+}
+.portfolio-lightbox-details small {
+  font-size: 10px;
+  line-height: 1.8;
+  display: block;
+  color: var(--muted);
+}
+.portfolio-gallery-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  font-size: 11px;
+  color: var(--muted);
+}
+@media (max-width: 1050px) {
+  .portfolio-profile-layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 27px;
+  }
+  .portfolio-painting-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio-profile .profile-heading {
+    align-items: flex-start;
+  }
+  .portfolio-profile .profile-actions {
+    max-width: 210px;
+    padding-top: 65px;
+  }
+  .portfolio-profile .profile-name h1 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 700px) {
+  .portfolio-cover {
+    height: 205px;
+  }
+  .portfolio-cover-content > p {
+    font-size: 30px;
+  }
+  .portfolio-cover-content > .eyebrow {
+    font-size: 7px;
+  }
+  .portfolio-profile {
+    margin-top: -34px;
+  }
+  .portfolio-profile .profile-heading {
+    gap: 20px;
+  }
+  .portfolio-profile .profile-name > .eyebrow {
+    margin-top: 38px;
+    font-size: 7px;
+  }
+  .portfolio-profile .profile-name h1 {
+    font-size: 29px;
+    line-height: 1.05;
+  }
+  .portfolio-profile .profile-identity {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .portfolio-profile .profile-identity > img {
+    width: 89px;
+    height: 100px;
+    border-radius: 7px;
+    object-position: center 20%;
+  }
+  .portfolio-profile .profile-name {
+    padding-bottom: 0;
+  }
+  .portfolio-location {
+    font-size: 9px !important;
+    line-height: 1.6;
+  }
+  .portfolio-location svg {
+    flex-shrink: 0;
+    width: 11px;
+  }
+  .portfolio-profile .profile-actions {
+    padding-top: 0;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .portfolio-profile .profile-actions .button {
+    font-size: 9px;
+    padding: 10px 11px;
+    flex: 1;
+    white-space: nowrap;
+  }
+  .portfolio-profile .profile-actions .button svg {
+    width: 12px;
+  }
+  .portfolio-profile-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 25px;
+  }
+  .portfolio-profile .profile-bio {
+    padding-bottom: 24px;
+  }
+  .portfolio-profile .profile-bio > p {
+    font-size: 12px;
+  }
+  .portfolio-profile .profile-stat-row {
+    max-width: 310px;
+    padding: 16px 0;
+    margin-top: 18px;
+    gap: 50px;
+  }
+  .portfolio-profile .profile-bio > .chips {
+    margin-top: 17px;
+  }
+  .portfolio-note {
+    margin-top: 20px;
+    max-width: 330px;
+  }
+  .portfolio-profile .profile-bio > .text-link {
+    font-size: 11px;
+  }
+  .portfolio-section-heading {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .portfolio-section-heading h2 {
+    font-size: 29px;
+  }
+  .portfolio-section-heading > span {
+    font-size: 9px;
+  }
+  .portfolio-painting-grid {
+    gap: 24px 13px;
+  }
+  .portfolio-painting-image {
+    padding: 8px !important;
+    aspect-ratio: 0.8;
+  }
+  .portfolio-painting-caption h3 {
+    font-size: 19px;
+  }
+  .portfolio-painting-caption > .eyebrow {
+    font-size: 6px;
+    letter-spacing: 0.5px;
+  }
+  .portfolio-view-icon {
+    width: 25px;
+    height: 25px;
+    right: 7px;
+    bottom: 7px;
+  }
+  .portfolio-view-icon > svg {
+    width: 13px;
+  }
+  .portfolio-filters .search-field {
+    max-width: none;
+  }
+  .portfolio-filters .chips {
+    gap: 7px;
+  }
+  .portfolio-filters .chip {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+  .portfolio-lightbox {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .portfolio-lightbox > .lightbox-image {
+    height: 47dvh;
+    max-height: 47dvh;
+  }
+  .portfolio-lightbox-details {
+    gap: 15px;
+  }
+  .portfolio-lightbox-details .eyebrow {
+    margin-bottom: 8px;
+    font-size: 7px;
+  }
+  .portfolio-lightbox-details h3 {
+    font-size: 25px;
+  }
+  .portfolio-lightbox-details p {
+    font-size: 11px;
+    margin: 10px 0;
+  }
+  .portfolio-lightbox-details small {
+    font-size: 9px;
+  }
+  .portfolio-gallery-controls {
+    padding-top: 12px;
+  }
+  .portfolio-about > h2 {
+    font-size: 30px;
+  }
+  .portfolio-subject-list > button > span:last-child {
+    font-size: 9px;
+    gap: 7px;
+  }
+}
+@media (max-width: 380px) {
+  .header-actions .profile-avatar {
+    display: block;
+  }
+  .portfolio-profile .profile-identity {
+    gap: 12px;
+  }
+  .portfolio-profile .profile-name h1 {
+    font-size: 27px;
+  }
+  .portfolio-profile .profile-name > .eyebrow {
+    font-size: 6px;
+  }
+  .portfolio-profile .profile-actions .button {
+    padding: 10px 8px;
+    font-size: 8px;
+  }
+}

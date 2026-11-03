@@ -29,6 +29,7 @@ import {
   feedbackOptions,
 } from "@/data/community-posts";
 import { artists } from "@/data/artists";
+import { mainArtist } from "@/data/alpana-barthakur";
 import { mediums } from "@/data/artworks";
 import { challenges } from "@/data/challenges";
 import { groups } from "@/data/groups";
@@ -45,7 +46,11 @@ import {
   SectionHeading,
   Tabs,
 } from "@/components/shared/ui";
+function isOwnAuthor(slug: string) {
+  return slug === "demo-visitor" || slug === mainArtist.slug;
+}
 function author(slug: string) {
+  if (slug === "demo-visitor") return mainArtist;
   return (
     artists.find((a) => a.slug === slug) || {
       name: "You · Demo visitor",
@@ -67,9 +72,7 @@ export function PostCard({ post }: { post: Post }) {
       <div className="post-author">
         <Link
           href={
-            post.artist === "demo-visitor"
-              ? "/profile"
-              : "/artists/" + artist.slug
+            isOwnAuthor(post.artist) ? "/profile" : "/artists/" + artist.slug
           }
         >
           <ArtImage src={artist.image} alt={artist.name} />
@@ -77,16 +80,14 @@ export function PostCard({ post }: { post: Post }) {
         <span>
           <Link
             href={
-              post.artist === "demo-visitor"
-                ? "/profile"
-                : "/artists/" + artist.slug
+              isOwnAuthor(post.artist) ? "/profile" : "/artists/" + artist.slug
             }
           >
             {artist.name}
           </Link>
           <small>{post.category}</small>
         </span>
-        {post.artist !== "demo-visitor" && (
+        {!isOwnAuthor(post.artist) && (
           <FollowButton slug={artist.slug} compact />
         )}
       </div>
@@ -342,7 +343,7 @@ export function PostComposer() {
       title: title.trim(),
       description: description.trim(),
       image,
-      artist: "demo-visitor",
+      artist: mainArtist.slug,
       category,
       medium,
       tags: [
@@ -618,7 +619,7 @@ export function PostDetail({ slug }: { slug: string }) {
       ...pending,
       category,
       text: text.trim(),
-      artist: "demo-visitor",
+      artist: mainArtist.slug,
     };
     update((s) => ({ ...s, annotations: [...s.annotations, item] }));
     setActive(item.id);
@@ -647,7 +648,7 @@ export function PostDetail({ slug }: { slug: string }) {
           </div>
           <h1>{post.title}</h1>
         </div>
-        {post.artist !== "demo-visitor" && <FollowButton slug={post.artist} />}
+        {!isOwnAuthor(post.artist) && <FollowButton slug={post.artist} />}
       </div>
       <div className="post-detail-layout">
         <div>
@@ -839,7 +840,7 @@ export function PostDetail({ slug }: { slug: string }) {
                   {
                     id: uid(),
                     post: slug,
-                    artist: "demo-visitor",
+                    artist: mainArtist.slug,
                     text: comment.trim(),
                     createdAt: new Date().toISOString(),
                   },

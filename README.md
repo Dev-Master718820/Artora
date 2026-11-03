@@ -27,6 +27,7 @@ The lockfile pins Next.js 16.4.3 and React 19.3.1, along with compatible TypeScr
 - Artwork directory with working keyword search, category/medium/style/size/price filters, sorting, favorites, and empty states.
 - Artwork details with alternate viewing modes, enlarged images, artist links, shipping/care information, related works, and explicitly fictional buyer reviews.
 - Artist discovery, portfolios, biographies, creative-process galleries, follows, commission availability, and teaching links.
+- Alpana Barthakur’s artist-supplied profile, discoverable by name and Hillsborough, New Jersey, with her portrait and 14 original painting photographs. The top-bar portrait opens her main profile; her public portfolio is `/artists/alpana-barthakur`.
 - Five-step commission wizard with validated description, local reference previews, style/medium/size/color selection, budget/date, deterministic artist matching, review, and demo submission.
 - Community feed with For You, Following, Latest, and Popular tabs; categories, follows, likes, saves, and post details.
 - Local post creation with image validation and preview, category, medium, tags, feedback preferences, and immediate feed insertion.
@@ -51,7 +52,7 @@ The lockfile pins Next.js 16.4.3 and React 19.3.1, along with compatible TypeScr
 | Academy             | `/learn`, `/learn/classes/[slug]`, `/learn/tutors/[slug]`, `/learn/classroom` |
 | Museum              | `/masters`, `/masters/artworks/[slug]`, `/masters/artists/[slug]`             |
 | Shopping            | `/cart`, `/checkout`                                                          |
-| Visitor             | `/favorites`, `/profile`, `/about`                                            |
+| Visitor             | `/favorites`, `/profile`, `/profile/activity`, `/about`                                            |
 
 ## Project structure
 
@@ -83,9 +84,11 @@ UXUI/                   Original supplied reference images, never embedded as UI
 
 Seed data includes 20 artworks, eight contemporary artists, 18 studio posts, 36 comments, 10 critique annotations, eight classes, five tutors, eight masterpieces, seven historical artists, three challenges, and four groups. Every artwork, class, post, and historical work references an existing creator.
 
+In addition to the eight fictional sample artists, `src/data/alpana-barthakur.ts` contains Alpana’s supplied artist profile and 14 portfolio paintings. `mainArtist` sets the primary profile used by the header and new local community contributions. Her supplied photographs are copied without alterations from `UXUI/painting/` into `public/images/artists/alpana-barthakur.png` and `public/images/artworks/alpana-barthakur/`. The latter directory includes a source manifest. Painting titles are descriptive browsing labels; no sale prices, ratings, experience claims, or collector reviews are invented for this portfolio. Filters and the enlarged viewer retain each complete photograph. Demo orders and bookings remain available through **Your activity**, at `/profile/activity`.
+
 ## Demo behavior and storage
 
-This is frontend only. There is no backend, database, authentication, actual checkout, real calendar booking, video infrastructure, live communication, or AI service. Contemporary names, prices, reviews, and ratings are fictional. Generated images illustrate the work of fictional artists. Historical names and museum records are separate, factual educational data.
+This is frontend only. There is no backend, database, authentication, actual checkout, real calendar booking, video infrastructure, live communication, or AI service. Sample marketplace names, prices, reviews, and ratings are fictional; Alpana’s supplied profile is identified separately. Generated images illustrate the work of fictional artists. Historical names and museum records are separate, factual educational data.
 
 `artora-demo-v1` in localStorage stores favorites, follows, likes, saved posts, cart, demo comments and annotations, post text metadata, commission draft/submission reference, bookings, and order references. Nothing is sent to anyone. Shipping fields are not stored. Clearing site data resets the demo. Storage failures keep the current session usable and show feedback.
 
@@ -97,7 +100,7 @@ Dates start from the reference brief's October 2026 demo period. Booking slots u
 
 All runtime images are local. Marketplace paintings were generated with the built-in image generation tool; final assets are in `public/images/artworks/`. `public/images/generated-artwork-prompts.json` records the prompt set and filenames. Artwork used again in a course, studio post, portfolio, or clearly labeled print is the same referenced piece. Alternate gallery views demonstrate a detail crop and a framing treatment of that piece.
 
-Artist portraits and studio photographs are illustrative images from [Unsplash](https://unsplash.com/license). `public/images/photo-sources.json` lists their download URLs. The people pictured are not actual Artora members or endorsers.
+Apart from Alpana’s supplied portrait, sample artist portraits and studio photographs are illustrative images from [Unsplash](https://unsplash.com/license). `public/images/photo-sources.json` lists their download URLs. The people pictured are not actual Artora members or endorsers.
 
 Museum reproductions use verified public-domain files from Wikimedia Commons and CC0 images from the Art Institute of Chicago. Exact rights/source links are in `src/data/masterpieces.ts` and on `/about#credits`. CC0 API metadata is retained in `public/images/open-access-sources.json`. The asset downloader checks the public-domain flag for Art Institute records. It is a development utility, not an application API.
 
@@ -117,7 +120,7 @@ The browser suite exercises every seed route and its images, search/filter/sort,
 
 The route audit checks browser-console hydration warnings as well as uncaught JavaScript errors. `tests/hydration.spec.ts` also reproduces image styles being injected before React hydrates, checking both clean and modified page loads while preserving image dimming, gallery transforms, and frame previews.
 
-Production verification completed: **14 browser tests passed**, covering **90 routes** and the main workflows above. TypeScript and the production build passed. Homepage screenshot checks reported no JavaScript errors, broken images, or mobile horizontal overflow. Local screenshots are available in `artifacts/screenshots/`.
+The original MVP production verification passed 14 browser tests across 90 routes. Alpana’s profile additions additionally passed three production browser tests for profile navigation, discovery, gallery controls, and mobile layouts, plus four existing tests covering checkout, commissions, community posts, and lesson bookings. TypeScript and the production build passed. Homepage screenshot checks reported no JavaScript errors, broken images, or mobile horizontal overflow. Local screenshots are available in `artifacts/screenshots/`.
 
 ## Future integration
 

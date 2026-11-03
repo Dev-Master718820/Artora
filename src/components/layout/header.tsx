@@ -17,6 +17,7 @@ import {
   X,
 } from "lucide-react";
 import { useDemo } from "@/context/demo-context";
+import { mainArtist } from "@/data/alpana-barthakur";
 import { ArtImage, Modal } from "@/components/shared/ui";
 const navigation = [
   ["Discover", "/"],
@@ -97,12 +98,9 @@ export function Header() {
             <Link
               href="/profile"
               className="profile-avatar"
-              aria-label="Demo profile"
+              aria-label={`${mainArtist.name}'s profile`}
             >
-              <ArtImage
-                src="/images/artists/emma.jpg"
-                alt="Demo visitor profile"
-              />
+              <ArtImage src={mainArtist.image} alt={mainArtist.name} />
             </Link>
             <button
               className="icon-button menu-button"
@@ -240,7 +238,7 @@ export function Footer() {
       <div className="footer-bottom container">
         <span>© 2026 Artora. Made for the love of art.</span>
         <span>
-          Frontend demo · Fictional artists & transactions.{" "}
+          Frontend demo · Sample marketplace transactions.{" "}
           <Link href="/about#credits">Image credits & sources</Link>
         </span>
         <span className="footer-location">

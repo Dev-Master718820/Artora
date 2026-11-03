@@ -88,7 +88,7 @@ export function CommissionWizard() {
             this browser. No artist has been contacted and no payment is due.
           </p>
           <p className="field-help">Demo reference {submitted}</p>
-          <ButtonLink href="/profile">
+          <ButtonLink href="/profile/activity">
             View your demo activity
             <ArrowRight size={15} />
           </ButtonLink>
@@ -361,7 +361,7 @@ export function CommissionWizard() {
                       </div>
                     </div>
                     <div className="match-actions">
-                      <strong>From {money(artist.minimum)}</strong>
+                      <strong>From {money(artist.minimum ?? 0)}</strong>
                       <button
                         className={`button small ${draft.artist === artist.slug ? "accent" : "secondary"}`}
                         onClick={() => set("artist", artist.slug)}

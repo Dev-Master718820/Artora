@@ -59,7 +59,10 @@ export function filterArtworks(
 }
 export function matchArtists(artists: Artist[], draft: CommissionDraft) {
   return artists
-    .filter((a) => a.available && a.minimum <= draft.budget)
+    .filter(
+      (a) =>
+        a.available && a.minimum !== undefined && a.minimum <= draft.budget,
+    )
     .map((a) => ({
       artist: a,
       score:
@@ -67,7 +70,11 @@ export function matchArtists(artists: Artist[], draft: CommissionDraft) {
         (a.mediums.includes(draft.medium) ? 4 : 0) +
         (a.styles.includes(draft.style) ? 3 : 0),
     }))
-    .sort((a, b) => b.score - a.score || a.artist.minimum - b.artist.minimum)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (a.artist.minimum ?? Infinity) - (b.artist.minimum ?? Infinity),
+    )
     .map((x) => x.artist);
 }
 export function loadStorage<T>(key: string, fallback: T): T {

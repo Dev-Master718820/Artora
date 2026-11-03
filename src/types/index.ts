@@ -7,11 +7,21 @@ export interface Artist {
   styles: string[];
   mediums: string[];
   bio: string;
-  experience: number;
+  experience?: number;
   available: boolean;
   teaching: boolean;
-  minimum: number;
-  rating: number;
+  minimum?: number;
+  rating?: number;
+  suppliedPortfolio?: boolean;
+  coverImage?: string;
+  portfolio?: PortfolioPainting[];
+}
+export interface PortfolioPainting {
+  slug: string;
+  title: string;
+  image: string;
+  category: string;
+  description: string;
 }
 export interface Artwork {
   slug: string;
